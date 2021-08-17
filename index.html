@@ -47,7 +47,7 @@
                         湖南工学院
                     </div>
                     <div class="block-subtitle">
-                        2013.9-2017.6 | 本科 | 网络工程专业
+                        2013.9-2017.6 | 统招本科 | 网络工程专业
                     </div>
                 </div>
                 <!-- <div class="block">
@@ -113,8 +113,12 @@
                     <div class="block-title">
                         上海游陆信息科技有限公司
                     </div>
-                    <div class="block-subtitle">
-                        2019.3 - Now | web前端组1人| web前端工程师
+                    <p class="block-subtitle">
+                        2019.3 - Now | web前端工程师
+                    </p>
+                    <div class="block-content">
+                        1、运营系统、BI系统的搭建及业务开发； <br> 2、管理后台系统的优化和重构工作，保证系统稳定可靠运行；
+                        <br> 3、公司官网和活动页开发，与iOS,Android交互内嵌webApp页面开发
                     </div>
                 </div>
 
@@ -122,16 +126,24 @@
                     <div class="block-title">
                         上海襄派实业有限公司
                     </div>
-                    <div class="block-subtitle">
-                        2018.3 - 2018.12 | web前端组1人| web前端工程师
+                    <p class="block-subtitle">
+                        2018.3 - 2018.12 | web前端工程师
+                    </p>
+                    <div class="block-content">
+                        1、H5商城项目的迭代开发和维护 <br> 2、开发添加产品，涉及商品多属性、物流运费模板、表单验证、富文本编辑、多图片上传等 <br> 3、报表部分利用图表可视化展现销售概况和订单统计等
+
                     </div>
                 </div>
                 <div class="block">
                     <div class="block-title">
                         上海绿岸网络科技股份有限公司
                     </div>
-                    <div class="block-subtitle">
-                        2017.3 - 2018.3 | web前端组7人| web前端工程师
+                    <p class="block-subtitle">
+                        2017.3 - 2018.3 | web前端工程师
+                    </p>
+                    <div class="block-content">
+                        1、开发游戏官网蜀门、醉逍遥、天之禁、权御天下首页、内页、文章页等，使用phpcms管理页面广告、推荐位、新闻等发布<br> 2、H5抽奖、许愿、招聘，预注册等活动页面开发
+                        <br> 3、完成PC端、移动端、微信开发、并做好浏览器的兼容性处理，针对不同屏幕分辨率进行响应式布局
                     </div>
                 </div>
 
@@ -143,71 +155,88 @@
                 项目经历
             </div>
             <div class="section-content">
-
-                <div class="block">
-                    <div class="block-title">
-                        <a href="https://www.ulugame.com/" style="text-decoration: underline;"> 游陆官网</a>
-                    </div>
-                    <div class="block-subtitle">
-                        开发和维护
-                    </div>
-                    <div class="block-content">
-                        <p> 官网项目重构，由我一人负责，自己经过技术选型和项目评估，选择了React+Material-UI的技术方案。先搭建出整体的框架，使用i18Next实现文字国际化，
-                            Material-UI负责界面和响应式，Redux实现数据共享，加上路由懒加载，让官网能够在多种终端呈现良好的效果。</p>
-
-                        <p>其中克服国际化问题时，面临接口返回的内容也要根据语言进行变换，于是在请求接口时带上语言参数，根据语言参数重新渲染，并在语言切换和刷新页面时也能满足需求。</p>
-                        <p>使用React Hook时由于是刚推出的新版本，中文参考资料并不太多，于是只能看完官方文档后，再一篇篇阅读英文的相关技术文章，最终达到了比较满意的效果，也能根据Hook
-                            写出复用的组件，更加方便快速。</p>
-                        <p>其次是因为Hook的推出，使React Redux的写法也发生了变化，redux也开始了hook式写法，使用Hook式开发使得数据共享流转时更加方便</p>
-
-                        <p>一个比较重要的问题是官网需要SEO,而SPA页面的缺点也就在这里，经过思考，决定2.0版本使用SSR框架Next.js。难点是整个项目都要做改动，MaterialUI、i18next和redux要根据Next.js进行
-                            配置修改，有的代码只能特定在浏览器端运行，在Node服务端却报错。根据情况使用“静态生成”预渲染页面getStaticPaths和getServerSideProps。
-                        </p>
-                        <p>加上SEO优化后的稳定2.0版本，让官网易于搜索，用户访问速度提升。前后端分离，更畅快的开发体验和更好维护性，网站内容管理数据发布后，官网即时生效，支持多国语言。</p>
-
-                    </div>
-                </div>
-
-                <div class="block">
-                    <div class="block-title">
-                        BI后台管理系统
-                    </div>
-                    <div class="block-subtitle">
-                        开发和维护
-                    </div>
-                    <div class="block-content">
-                        <p>一个后台管理系统，既满足需求部门的报表，留存，渠道分析，ROI等可视化数据分析功能，又实现平台用户，游戏管理，前端内容管理等功能</p>
-                        <p>技术选型Vue+ElementUI，抽取出API接口到单独的文件夹进行管理；用axios请求数据，还能进行请求拦截；在登录和个人信息时用Vuex实现数据共享；使用Iconfont小图标，根据生产，开发，测试设置环境变量，
-                            方便打包；router-view功能避免固定的公共组件重复编写。<br /></p>
-                        <p> 比较难的是权限控制，分为路由权限和按钮级权限，根据登录角色来设置用户权限和动态路由。用户登录返回token,根据token去查询用户信息和用户角色;
-                            在router.js中，区分需要权限的路由和不需要权限的路由，先挂载不需要权限的路由，例如登录页/首页这种;
-                            在store里面过滤和动态添加路由，生成最后的路由表state.routers=constantRouterMap.concat(asyncRouterMap);
-                        </p>
-                        <p>项目完成后给需求部门提供很大的方便，他们能根据需求去查询相关数据，降低了沟通成本，对前台页面的管理也很方便。</p>
-                    </div>
-                </div>
                 <div class="block">
                     <div class="block-title">
                         桌面应用程序 游戏手游助手
                     </div>
                     <div class="block-subtitle">
-                        创建和维护
+                        2020-07-至今
                     </div>
                     <div class="block-content">
-                        <p>游戏手游助手，把公司游戏集合在上面，下载后可在模拟器中玩。</p>
-                        <p>技术选型Electron+React,实现自定义导航栏，提供游戏下载，保留用户数据，自动登录，记住密码等功能。技术难点就在下载这个功能实现,这里有一个很复杂的逻辑。
+                        <p>项目说明：桌面端应用程序+模拟器制作的游戏手游助手，把公司游戏集合在上面，下载后可在pc端模拟手游运行，在模拟器中玩游戏。</p>
+                        <p>技术选型：Electron+React+Material-UI </p>
+                        <p class="block-content">实现功能：<br> ● 实现程序版本更新，自动和手动弹出更新说明，下载后自动安装重启<br> ● 实现设置开机自启动，多语言等功能<br> ● 优化游戏下载，实现多任务队列化，安装本地APK，删除游戏等功能
+                            <br> ● 实现用户登录注册加第三方登录，自动登录，记住密码，忘记密码功能</p>
+                        <p class="block-content">
+                            1、实现数据共享，对于多个页面上的下载按钮，任意一个按钮处理暂停，继续，删除的功能，其他按钮保持下载数据一致，数据存储用的在主进程和渲染进程都能运行的Electron-store, 使用redux达到浏览器的数据共享
+                            <br> 2、实现断点下载，当桌面软件被关闭，下次打开时，保留之前的下载进度，通过跳过之前下载的字节，从后面的字节开始下载的方式来实现
+                            <br> 3、多游戏下载的处理是比较复杂的，下载涉及到Electron和浏览器的交互，渲染进程监控下载事件的发生，主进程处理下载过程， 每个游戏都有自己的下载状态和下载进度，需要一个下载队列来管理，做好数据存储和排队逻辑的问题
                         </p>
-                        <p>第一个是多个页面中均存在下载按钮，点击任一个下载按钮，多处地方显示相同的下载进度，每个下载按钮可以处理暂停，继续，删除的功能。<br />
-                            下载涉及到Electron和浏览器的交互，渲染进程监控下载事件的发生，主进程处理下载过程，使用到的是downloadItem对象，数据存储用的在主进程和渲染进程都能运行的Electron-store,
-                            使用redux达到浏览器的数据共享。
-                        </p>
-                        <p> 第二个是当用户想下载多个游戏，依次点击下载，用户中心显示一个当前下载列表，这里要处理一个下载队列问题，每个游戏都有自己的下载状态和下载进度，<br />
-                            最重要的就是Electron和浏览器都记住保存每个游戏的donwloadItem，其他在等待中的游戏如果被点击，下载中游戏要暂停，如果都是被等待，则按照序列下载。</p>
-                        <p>第三个是断点下载，当桌面软件被关闭，下次打开时，保留之前的下载进度，通过跳过之前下载的字节，从后面的字节开始下载。</p>
-                        <p>最后实现完整的下载逻辑。手机游戏也能在电脑端玩</p>
 
                     </div>
                 </div>
+                <div class="block">
+                    <div class="block-title">
+                        <a href="https://www.ulugame.com/" style="text-decoration: underline;"> 游陆管理后台</a>
+                    </div>
+                    <div class="block-subtitle">
+                        2019.04-2021.07
+                    </div>
+                    <div class="block-content">
+                        <p>项目说明：运营管理后台</p>
+                        <p> 技术选型：Vue全家桶+Element-UI</p>
+
+                        <p>实现功能：<br> ● 实现权限管理，用户管理，内容管理，活动管理，客户服务等功能<br> ● 报表，留存，渠道分析，ROI等数据可视化分析功能</p>
+
+                        <p>1、搭建带权限控制包括路由权限和按钮级权限，根据登录角色来生成用户权限和动态路由侧边栏的基础框架，配合sass书写样式<br> 2、抽取出API接口单独管理，封装Axios请求，实现请求和响应拦截，使用Vuex解决用户信息等需要多组件状态共享的问题
+                            <br> 3、配置图标Iconfont小图标使用方式；根据生产，测试，开发不同环境设置环境变量，方便打包；router-view功能避免固定的公共组件重复编写
+                        </p>
+
+                    </div>
+                </div>
+
+                <div class="block">
+                    <div class="block-title">
+                        游陆官网
+                    </div>
+                    <div class="block-subtitle">
+                        2019-10-2020-10
+                    </div>
+                    <div class="block-content">
+                        <p> 项目说明：<a href="https://www.ulugame.com/" target="_blank" style="text-decoration: underline;">陆官网游</a></p>
+                        <p> 技术选型：React+Next+Material-UI</p>
+
+                        <p> 实现功能：<br> ● 搭建基础1.0，首页，人才招聘，游戏列表，游戏详情等页面，支持语言国际化<br> ● 重构2.0，使用服务端渲染SSR技术Next.js框架项目重构，支持礼包领取，游戏资讯，充值，个人中心等功能
+                        </p>
+
+                        <p> 1、官网项目，先搭建出整体的框架，采用Hooks式写法，使用i18Next实现文字国际化， Material-UI负责界面和响应式，Redux实现数据共享，加上路由懒加载，让官网能够在多种终端呈现良好的效果。
+                            <br> 2、实现国际化时面临接口返回的内容也要根据语言进行变换，根据语言参数重新渲染，并在语言切换和刷新页面时也能满足需求。
+                            <br> 3、2.0版本使用服务端渲染，难点是整个项目都要做改动，MaterialUI、i18next和Redux要根据Next.js进行配置修改，处理好只能在浏览器端或Node端运行的代码
+                            <br> 4、升级后稳定的2.0版本，解决了前端编译打包流程慢，搜索引擎不友好的问题，用户访问速度有了较大提升和更好的维护性， 通过内容管理后台添加信息，使官网即时生效
+                        </p>
+                    </div>
+                </div>
+                <div class="block">
+                    <div class="block-title">
+                        供货商后台管理系统
+                    </div>
+                    <div class="block-subtitle">
+                        2018-7-2018-11
+                    </div>
+                    <div class="block-content">
+                        <p> 项目说明：供货商管理后台</p>
+                        <p> 技术选型：Vue+Element-UI</p>
+
+                        <p> 实现功能：<br> ● 供货商对商品和订单的管理<br> ● 快递设置，促销活动设置
+                        </p>
+
+                        <p> 1、供货商利用此平台管理产品，便于在前台商城中展示售卖
+                            <br>2、项目使用Vue全家桶进行开发，使用es6语法，根据加载不同页面使用懒加载以提高页面加载速度
+                            <br> 3、封装axios请求、拦截器统一错误和超时处理，封装公共组件，便于复用，动态生成侧边导航栏，支持路由无限嵌套
+                        </p>
+                    </div>
+                </div>
+
             </div>
         </section>
 
@@ -222,8 +251,7 @@
                         我的博客
                     </div>
                     <div class="block-content">
-                        <a href="https://grace618.github.io/myBlog/" style="text-decoration: underline;"
-                            target="_blank">GRACE'S BLOG</a>
+                        <a href="https://grace618.github.io/myBlog/" style="text-decoration: underline;" target="_blank">GRACE'S BLOG</a>
                     </div>
                 </div>
 
@@ -232,7 +260,7 @@
                         兴趣爱好
                     </div>
                     <div class="block-content">
-                        户外运动，一个有抱负的厨师，乐器
+                        旅游，乐器
                     </div>
                 </div>
 
